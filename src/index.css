@@ -1,0 +1,90 @@
+/* define global styles that can be inherited everywhere */
+:root {
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	color: rgba(0, 0, 0, 0.87);
+	background-color: #ffffff;
+
+	/* pastel colours */
+	--blue-pastel: #bfecff;
+	--purple-pastel: rgb(205, 193, 255);
+	--yellow-pastel: rgb(255, 246, 227);
+	--pink-pastel: #ffccea;
+
+	/* pastel orange */
+	--peach: #ffb38e;
+	--peach-opacity-4: rgb(255, 179, 142, 0.4);
+	--peach-light: rgb(255, 207, 157);
+	--orange: #ffb26f;
+	--brown: #de8f5f;
+
+	/* website color scheme */
+	/* --website-bluish-cyan: #f9fbfc;
+	--websote-bright-grey: #403056;
+	--website-orange-red: #dc4132;
+	--website-firebush: rgb(238, 159, 47); */
+
+	--website-ivory: rgb(255, 252, 241);
+	--website-dark-blue-grey: #213650;
+	--website-watermelon: rgb(255, 65, 106);
+
+	--fluid-12-30: clamp(0.75rem, 0.3587rem + 1.9565vw, 1.875rem);
+	--fluid-15-30: clamp(0.9375rem, 0.6114rem + 1.6304vw, 1.875rem);
+	--fluid-14-20: clamp(0.875rem, 0.7446rem + 0.6522vw, 1.25rem);
+	--fluid-30-60: clamp(1.875rem, 1.2228rem + 3.2609vw, 3.75rem);
+	--fluid-20-27: clamp(1.25rem, 1.0978rem + 0.7609vw, 1.6875rem);
+
+	--pixel-font-family: 'Tiny5', sans-serif;
+	--font-weight: 400;
+	--font-style: normal;
+
+	--flower-font-family: 'Indie Flower', cursive;
+
+	--hero-font-family: 'Roboto Mono', monospace;
+	--hero-font-optical-sizing: auto;
+
+	--fluid-min-height: 3rem; /* Minimum height */
+	--fluid-max-height: 5rem; /* Maximum height */
+	--fluid-min-vw: 320px; /* Minimum viewport width */
+	--fluid-max-vw: 1200px; /* Maximum viewport width */
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	/* font-size: 62.5%; */
+	/* background-color: var(--website-ivory); */
+}
+
+body {
+	/* display: flex; */
+	/* min-width: 320px; */
+	min-height: 100vh;
+	width: 100%;
+	color: black;
+	background-color: var(--website-ivory);
+}
+
+h2 {
+	margin: 0;
+}
+
+ul li {
+	list-style: none;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+/* button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+ */

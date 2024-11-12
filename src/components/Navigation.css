@@ -1,0 +1,67 @@
+.nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	transition: 0.5s opacity ease;
+
+	/* background-color: var(--website-firebush); */
+
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem 1rem;
+
+	/* max-width: 1280px; */
+	/* font-family: var(--flower-font-family); */
+	font-family: var(--hero-font-family);
+
+	font-size: var(--fluid-15-30);
+
+	z-index: 10;
+
+	background-color: rgba(255, 255, 255, 0.4); /* Semi-transparent background */
+	background-color: rgb(249, 162, 181, 0.1);
+	color: var(--website-dark-blue-grey);
+	backdrop-filter: blur(7px); /* Blurry background effect */
+	-webkit-backdrop-filter: blur(10px); /* Safari support */
+}
+
+.nav.visible {
+	opacity: 1;
+}
+
+ul {
+	display: flex;
+	gap: 2.5rem;
+}
+
+.logo {
+	color: var(--website-watermelon);
+	font-size: var(--fluid-14-20);
+	transform: rotate(-10deg);
+	align-self: center;
+	cursor: pointer;
+
+
+	
+}
+
+a:hover {
+	color: var(--website-watermelon);
+	/* border-bottom: 3px solid var(--website-watermelon); */
+}
+
+a.active {
+	color: var(--website-watermelon);
+	border-bottom: 3px solid var(--website-watermelon);
+}
+
+@media screen and (max-width: 20em) {
+	ul {
+		gap: 1.5rem;
+	}
+
+	.section .hero {
+	}
+}

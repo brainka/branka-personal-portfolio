@@ -1,0 +1,165 @@
+.section.contact {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.form-group {
+	position: relative;
+}
+
+.form-group.top {
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+}
+
+.form-group.top > * {
+	flex-grow: 1;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+
+	width: 100%;
+	/* max-width: 50%; */
+	padding: 20px;
+}
+
+input,
+button,
+label,
+textarea {
+	font-size: var(--fluid-20-27);
+}
+
+input,
+button,
+label,
+textarea {
+	cursor: pointer;
+	font-family: inherit;
+	border: none;
+	background-color: rgba(246, 244, 228, 0.2);
+	border-radius: 0;
+}
+
+input {
+	height: 5rem;
+	height: calc(
+		var(--fluid-min-height) +
+			(var(--fluid-max-height) - var(--fluid-min-height)) *
+			(
+				(100vw - var(--fluid-min-vw)) /
+					(var(--fluid-max-vw) - var(--fluid-min-vw))
+			)
+	);
+	width: 100%;
+	border-bottom: 2px solid rgb(214, 196, 200);
+	/* border-radius: 6px; */
+	/* border: none; */
+	outline: none;
+	padding: 8px;
+}
+
+input[type='text']:focus {
+	border-bottom: 2px solid var(--website-watermelon);
+}
+
+label {
+	position: absolute;
+	transition: 0.5s ease;
+	left: 8px;
+	top: 5px;
+	color: rgb(214, 196, 200);
+
+	/* background-color: rgba(246, 244, 228, 0.2); */
+
+	/* padding: 0 0.5rem; */
+}
+
+textarea {
+	outline: none;
+	border-bottom: 2px solid rgb(214, 196, 200);
+	border-left: 2px solid rgb(214, 196, 200);
+	border-radius: 0;
+}
+
+input:focus + label,
+textarea:focus + label {
+	transform: translateY(-35px);
+	color: var(--website-watermelon);
+}
+
+textarea:focus {
+	border-bottom: 2px solid var(--website-watermelon);
+	border-left: 2px solid var(--website-watermelon);
+}
+
+.valid {
+	transform: translateY(-35px);
+	color: var(--website-watermelon);
+	/* color: rgb(36, 212, 36); */
+}
+
+textarea {
+	resize: none;
+	width: 100%;
+	height: 150px;
+	font-family: inherit;
+	padding: 8px;
+}
+
+.submit-button-wrapper {
+	width: 100%;
+	max-width: 220px;
+	align-self: center;
+
+	position: relative;
+
+	cursor: pointer;
+}
+
+.submit-button-wrapper:after {
+	content: '';
+	position: absolute;
+	border: 1px solid black;
+	width: 100%;
+	height: 100%;
+	left: -6px;
+	top: -6px;
+	transition: 0.3s ease;
+}
+
+.submit-button-wrapper:hover:after {
+	left: 10px;
+	top: 10px;
+	border: 1px solid black;
+	/* box-shadow: 10px 5px 5px black; */
+}
+
+/* if there is text in the input field, make sure the animation does not play aka like being valid or something */
+
+@media screen and (min-width: 48em) {
+	body {
+		/* background-color: yellow; */
+	}
+
+	form {
+		max-width: 50rem;
+	}
+
+	.form-group.top {
+		/* display: flex; */
+		flex-direction: row;
+	}
+}
+
+@media (orientation: landscape) {
+	body {
+		/* background-color: yellow; */
+
+	}
+}
