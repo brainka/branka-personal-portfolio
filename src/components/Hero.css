@@ -1,8 +1,7 @@
 .section,
 .hero {
-	height: 100vh;
-	/* border: 10px solid blue; */
-	padding-top: 70px;
+	min-height: 100vh;
+	padding: 70px 20px;
 }
 
 .hero,
@@ -75,24 +74,6 @@
 	border: 1px solid black;
 	/* box-shadow: 10px 5px 5px black; */
 }
-
-.cta-button {
-	width: 100%;
-	max-width: 420px;
-	/* width: 8rem; */
-	font-size: 25px;
-	padding: 10px;
-	/* border: 1px solid black; */
-	border: none;
-	/* background-color: rgb(249, 153, 252); */
-	background-color: var(--website-watermelon);
-	color: var(--website-dark-blue-grey);
-
-	/* transform: rotate(-0deg); */
-	position: relative;
-}
-
-
 
 @media screen and (max-width: 20em) {
 	.nav {

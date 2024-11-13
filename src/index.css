@@ -32,6 +32,7 @@
 	--fluid-14-20: clamp(0.875rem, 0.7446rem + 0.6522vw, 1.25rem);
 	--fluid-30-60: clamp(1.875rem, 1.2228rem + 3.2609vw, 3.75rem);
 	--fluid-20-27: clamp(1.25rem, 1.0978rem + 0.7609vw, 1.6875rem);
+	--fluid-25-30: clamp(1.5625rem, 1.4538rem + 0.5435vw, 1.875rem);
 
 	--pixel-font-family: 'Tiny5', sans-serif;
 	--font-weight: 400;
@@ -68,10 +69,18 @@ body {
 	width: 100%;
 	color: black;
 	background-color: var(--website-ivory);
+	color: var(--website-dark-blue-grey);
 }
 
 h2 {
 	margin: 0;
+	color: var(--website-watermelon);
+	font-family: inherit;
+	font-weight: 500;
+	font-size: var(--fluid-25-30);
+	text-decoration: underline;
+	text-underline-offset: 10px;
+
 }
 
 ul li {
@@ -81,6 +90,32 @@ ul li {
 a {
 	color: inherit;
 	text-decoration: none;
+}
+
+.cta-button {
+	width: 100%;
+	max-width: 420px;
+	/* width: 8rem; */
+	font-size: 25px;
+	padding: 10px;
+	/* border: 1px solid black; */
+	border: none;
+	/* background-color: rgb(249, 153, 252); */
+	background-color: var(--website-watermelon);
+	color: var(--website-dark-blue-grey);
+
+	/* transform: rotate(-0deg); */
+	position: relative;
+	text-align: center;
+}
+
+.content H2 {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.content {
+	gap: 1rem;
 }
 
 /* button:focus,

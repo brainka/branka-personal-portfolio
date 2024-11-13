@@ -76,7 +76,7 @@ const Hero = () => {
 					}
 				});
 			},
-			{ threshold: 0.75 }
+			{ threshold: 0.2 }
 		);
 
 		sections.forEach((section) => {
@@ -101,13 +101,15 @@ const Hero = () => {
 					Hey, I'm <span>Branka</span>
 				</h1>
 				<div className="subtitle">
-					Front-end dev, a <span>year</span> in the game, and{' '}
-					<span>hungry</span> to go
+					Front-end dev, a <span>year</span> in the game, and
+					<span> hungry</span> to go
 					<span> full-stack</span>. Leveling up from junior level!
 				</div>
-				<div className="about-me button-wrapper">
-					<button className="cta-button">About me</button>
-				</div>
+				{/* <div className="about-me button-wrapper">
+					<a href="#about" className="cta-button">
+						About me
+					</a>
+				</div> */}
 			</div>
 
 			<About ref={aboutRef} />

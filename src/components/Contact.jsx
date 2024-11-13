@@ -31,7 +31,7 @@ const Contact = forwardRef(function Contact(props, ref) {
 
 	return (
 		<section className="section contact" id="contact" ref={ref}>
-			{/* <h2>Send me a message</h2> */}
+			<h2>Send me a message</h2>
 			<form id="contact-form" onSubmit={handleFormSubmit}>
 				<div className="form-group top">
 					<div className="form-group">
