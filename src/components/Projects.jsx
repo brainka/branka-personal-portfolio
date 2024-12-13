@@ -37,7 +37,7 @@ const Projects = forwardRef(function Projects(props, ref) {
 							</div>
 
 							<a
-								href="https://v-app-brainka.netlify.app/"
+								href="https://v-pt-app-v2.netlify.app/"
 								target="_blank"
 								rel="noopener noreferrer"
 								className="link"
